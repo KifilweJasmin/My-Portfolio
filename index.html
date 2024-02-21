@@ -93,8 +93,9 @@
         >
       </div>
     </div>
-    <div>
-      <p></p>
+    
+    <div class="text-center m-4">
+      <p id="typewriter" class="text-4xl font-bold"></p>
     </div>
 
     <h2 class="mb-5">Recent Projects</h2>
@@ -190,5 +191,43 @@
         </p>
       </footer>
     </div>
+
+    <script>
+      const words = [
+        "Coding is",
+        "FUN"
+       
+      ];
+      let i = 0;
+      let j = 0;
+      let currentWord = "";
+      let isDeleting = false;
+
+      function type() {
+        currentWord = words[i];
+        if (isDeleting) {
+          document.getElementById("typewriter").textContent =
+            currentWord.substring(0, j - 1);
+          j--;
+          if (j == 0) {
+            isDeleting = false;
+            i++;
+            if (i == words.length) {
+              i = 0;
+            }
+          }
+        } else {
+          document.getElementById("typewriter").textContent =
+            currentWord.substring(0, j + 1);
+          j++;
+          if (j == currentWord.length) {
+            isDeleting = true;
+          }
+        }
+        setTimeout(type, 150);
+      }
+
+      type();
+    </script>
   </body>
 </html>
