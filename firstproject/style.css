@@ -1,0 +1,64 @@
+h1 {
+    text-align: center;
+    color: blue;
+    padding: 0 0 24px;
+  }
+  h2 {
+    text-align: center;
+    color: blue;
+    padding: 0 0 24px;
+  }
+  h3 {
+    text-align: center;
+    font-weight: lighter;
+    font-size: small;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 15px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  a {
+    display: block;
+    color: blue;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  button {
+    border-radius: 25px;
+    margin: 0 auto;
+    display: block;
+    background-color: #fff;
+    border: 1px solid blue;
+    color: blue;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 16px 24px;
+    text-decoration: none;
+    transition: all 200ms ease ease-in-out;
+    box-shadow: 5px 4px 3px rgba(0, 0, 0, 0.2);
+  }
+  button:hover {
+    color: #fff;
+    background: blue;
+    cursor: pointer;
+  }
+  .anime {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 50px;
+    background: linear-gradient(
+      178.6deg,
+      rgb(232, 245, 253) 3.3%,
+      rgb(252, 253, 255) 109.6%
+    );
+  }
